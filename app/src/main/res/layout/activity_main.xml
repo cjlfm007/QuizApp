@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -33,21 +34,24 @@
                     android:textSize="14sp"
                     />
                 <CheckBox
+                    android:id="@+id/checkbox1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="UdacityMan"
                     android:textSize="14sp"
                     android:checked="false"/>
                 <CheckBox
+                    android:id="@+id/checkbox2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="SuperMan"
                     android:textSize="14sp"
                     android:checked="false"/>
                 <CheckBox
+                    android:id="@+id/checkbox3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Joker"
+                    android:text="McdonaldMan"
                     android:textSize="14sp"
                     android:checked="false"/>
             </LinearLayout>
@@ -75,6 +79,7 @@
                         android:textSize="14sp"
                         android:checked="false"/>
                     <RadioButton
+                        android:id="@+id/correct1"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="2"
@@ -118,6 +123,7 @@
                         android:textSize="14sp"
                         android:checked="false"/>
                     <RadioButton
+                        android:id="@+id/correct2"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Los Angeles"
@@ -161,6 +167,7 @@
                         android:textSize="14sp"
                         android:checked="false"/>
                     <RadioButton
+                        android:id="@+id/correct3"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="West Coast"
@@ -188,7 +195,7 @@
                 <ImageView
                     android:id="@+id/result_img"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_height="180dp"
                     android:src="@drawable/think"/>
             </LinearLayout>
         </LinearLayout>
@@ -196,7 +203,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
+            android:layout_alignParentLeft="true"
+            android:onClick="submit"
             android:text="SUBMIT" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:onClick="reset"
+            android:text="RESET" />
     </RelativeLayout>
 </ScrollView>
