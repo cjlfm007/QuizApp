@@ -64,7 +64,8 @@ public class MainActivity extends AppCompatActivity {
         else{
             imgView.setImageResource(R.drawable.failed);
         }
+        float rate = (float) score / (float) 4;
         scoreView.setText("Scoring \n" +
-                "You scored " + score + "/4 = " + (score % 4) * 100 + "%");
+                "You scored " + score + "/4 = " + rate * 100 + "%");
     }
 }
