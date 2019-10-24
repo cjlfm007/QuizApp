@@ -4,6 +4,7 @@
     <string name="q1">1. Which is not Super Hero?</string>
     <string name="q2">2. 1 + 1 = ?</string>
     <string name="q3">3. Which is not a state in US?</string>
-    <string name="q4">4. Where is San Francisco?</string>
+    <string name="q4">4. Which state has San Francisco?</string>
+    <string name="ca">CA</string>
     <string name="title">Trivia</string>
 </resources>
